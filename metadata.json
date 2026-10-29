@@ -1,0 +1,6 @@
+{
+  "name": "Calculadora Terminal Matrix",
+  "description": "Calculadora interativa com estética Terminal Matrix, visor verde sobre preto em tempo real e motor Python.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

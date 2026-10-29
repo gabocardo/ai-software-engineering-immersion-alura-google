@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DENTAKU // py_calc</title>
+    <meta name="description" content="Interactive Matrix Terminal aesthetic calculator powered by Python 3 engine with real-time green phosphor display." />
+    <meta property="og:title" content="DENTAKU // py_calc" />
+    <meta property="og:description" content="Interactive Matrix Terminal aesthetic calculator powered by Python 3 engine with real-time green phosphor display." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+    <script>
+      // Ignorar erros esperados de WebSocket / HMR no ambiente AI Studio iframe
+      window.addEventListener('error', function(e) {
+        if (e.message && (e.message.includes('WebSocket') || e.message.includes('@vite/client') || e.message.includes('ModuleRunnerTransport'))) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(e) {
+        var str = String(e.reason && (e.reason.message || e.reason.stack || e.reason));
+        if (str.includes('WebSocket') || str.includes('@vite/client') || str.includes('ModuleRunnerTransport')) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-black text-[#00ff41] antialiased selection:bg-[#003b00] selection:text-[#00ff41] overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
