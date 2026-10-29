@@ -6,7 +6,7 @@
 
 ## English
 
-This repository brings together the projects developed during the **Alura + Google AI Software Engineering Immersion**. Each project lives in its own folder, leaving room for the next course projects.
+This repository brings together the projects developed during the **Software Engineering Immersion: Dev in the Age of AI**, hosted by Alura in partnership with Google. Each project lives in its own folder.
 
 ### Project 01 — DENTAKU
 
@@ -44,7 +44,8 @@ Future projects will be added in their own folders alongside `calculadora/`.
 
 ## Português
 
-Este repositório reúne os projetos desenvolvidos durante a **Imersão em Engenharia de Software com IA da Alura + Google**. Cada projeto fica em sua própria pasta, deixando espaço para os próximos projetos do curso.
+Este repositório reúne os projetos desenvolvidos durante a **Imersão Engenharia de Software: Dev na Era da IA**, promovida pela Alura em parceria com o Google. Cada projeto fica em sua própria pasta.
+
 
 ### Projeto 01 — DENTAKU
 
