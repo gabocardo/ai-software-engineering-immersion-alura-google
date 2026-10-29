@@ -1,23 +1,24 @@
-# Imersão em Engenharia de Software com IA — Alura + Google
+# AI Software Engineering Immersion · Alura + Google
 
-Repositório de projetos desenvolvidos durante a imersão. Cada projeto fica em sua própria pasta.
+[English](#english) · [Português](#português)
 
-## Projetos
+![DENTAKU calculator with a green terminal interface and Matrix-inspired digital rain / Calculadora DENTAKU com interface de terminal verde e chuva digital inspirada em Matrix](./calculadora/docs/images/dentaku-screenshot.png)
 
-- [Calculadora Terminal Matrix](./calculadora/): motor de cálculo em Python, interface React e servidor Node.js.
+## English
 
-## Executar a calculadora
+This repository brings together the projects developed during the **Alura + Google AI Software Engineering Immersion**. Each project lives in its own folder, leaving room for the next course projects.
 
-A partir da raiz do repositório:
+### Project 01 — DENTAKU
 
-```sh
-cd calculadora
-python3 calculator.py
-```
+[DENTAKU](./calculadora/) is the **first project developed in the course**: a calculator with a Python calculation engine and a web interface built around a **terminal aesthetic inspired by Matrix**.
 
-No Windows, se necessário, use `python` no lugar de `python3` para executar o programa no terminal.
+The name comes from **dentaku (電卓 / デンタク)**, which means **calculator in Japanese**. Its visual identity combines glowing green text, a dark background, monospaced typography, CRT-style scanlines, and digital rain to recreate the atmosphere of a retro terminal.
 
-Para iniciar a interface web, instale Node.js/npm e tenha `python3` disponível no PATH (o servidor usa esse comando):
+The calculator supports addition, subtraction, multiplication, and division. The project combines **Python** for calculations, **React and TypeScript** for the interface, and **Node.js, Express, and Vite** for the web application.
+
+### Run locally
+
+For the web application, install Node.js/npm and make sure Python 3 is available as `python3` on your PATH. From the repository root, run:
 
 ```sh
 cd calculadora
@@ -25,10 +26,54 @@ npm install
 npm run dev
 ```
 
-Execute `cd calculadora` apenas se ainda estiver na raiz. Acesse http://localhost:3000.
+Open [localhost:3000](http://localhost:3000) in your browser.
 
-Os comandos `npm run build` e `npm run lint` também devem ser executados dentro de `calculadora/`.
+To use only the Python calculator, run this from inside `calculadora/`:
 
-Ao configurar hospedagem ou ferramentas externas, use `calculadora/` como diretório raiz do aplicativo.
+```sh
+python3 calculator.py
+```
 
-Novos projetos podem ser adicionados em outras pastas na raiz, ao lado de `calculadora/`.
+On Windows, you can use `python calculator.py` for the command-line version if that is your Python command. The web server currently invokes `python3`.
+
+Run `npm run build` to build the web interface and `npm run lint` to check TypeScript. Run both commands inside `calculadora/`. For hosting or external tools, set the application root directory to `calculadora/`.
+
+Future projects will be added in their own folders alongside `calculadora/`.
+
+---
+
+## Português
+
+Este repositório reúne os projetos desenvolvidos durante a **Imersão em Engenharia de Software com IA da Alura + Google**. Cada projeto fica em sua própria pasta, deixando espaço para os próximos projetos do curso.
+
+### Projeto 01 — DENTAKU
+
+O [DENTAKU](./calculadora/) é o **primeiro projeto desenvolvido no curso**: uma calculadora com motor de cálculo em Python e interface web construída com uma **estética de terminal inspirada em Matrix**.
+
+O nome vem de **dentaku (電卓 / デンタク)**, que significa **calculadora em japonês**. A identidade visual combina texto verde luminoso, fundo escuro, tipografia monoespaçada, linhas de varredura de monitores CRT e chuva digital para recriar a atmosfera de um terminal retrô.
+
+A calculadora oferece adição, subtração, multiplicação e divisão. O projeto combina **Python** para os cálculos, **React e TypeScript** para a interface e **Node.js, Express e Vite** para a aplicação web.
+
+### Executar localmente
+
+Para usar a aplicação web, instale Node.js/npm e certifique-se de que o Python 3 está disponível no PATH pelo comando `python3`. A partir da raiz do repositório, execute:
+
+```sh
+cd calculadora
+npm install
+npm run dev
+```
+
+Abra [localhost:3000](http://localhost:3000) no navegador.
+
+Para usar apenas a calculadora em Python, execute dentro de `calculadora/`:
+
+```sh
+python3 calculator.py
+```
+
+No Windows, você pode usar `python calculator.py` para a versão de terminal, caso esse seja o comando da sua instalação. O servidor web atualmente utiliza `python3`.
+
+Use `npm run build` para gerar a interface web de produção e `npm run lint` para verificar o TypeScript. Execute ambos dentro de `calculadora/`. Ao configurar hospedagem ou ferramentas externas, defina `calculadora/` como diretório raiz da aplicação.
+
+Os próximos projetos serão adicionados em pastas próprias, ao lado de `calculadora/`.
